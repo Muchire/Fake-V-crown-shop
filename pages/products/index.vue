@@ -2,7 +2,7 @@
     <div>
       <div class="grid grid-cols-4 gap-5">
         <div v-for="p in products">
-          <ProductCard />
+          <ProductCard :product="p" />
         </div>
       </div>
 
@@ -15,6 +15,10 @@ definePageMeta({
 })
 
 const { data: products } = await useFetch('https://fakestoreapi.com/products')
+
+useHead({
+  title:'V Crown| Merch'
+})
 
 </script>
 
