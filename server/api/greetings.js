@@ -1,9 +1,9 @@
 export default defineEventHandler((event) => {
 
-    //const{ name } = useQuery(event)
+    // const{ name } = useQuery(event)
 
 
     return {
-        message: `Hello, Hey, ${name}`
+        message:`Hello, Hey,`
     }
 })
